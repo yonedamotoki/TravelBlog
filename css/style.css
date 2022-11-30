@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "NotoSansJP";
+  src: url(./NotoSansJP-Regular.otf);
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url(./NotoSans-Regular.ttf);
+}
+
+body {
+  font-family: "NotoSansJP", "NotoSans";
+  color: #333333;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
+header .title {
+  padding: 1.25em 1em;
+}
+
+header .title .img-container {
+  width: 10%;
+  min-width: 9em;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 0 1em;
+  padding-top: 3.1em;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.caption {
+  padding-bottom: 1.7em;
+  font-size: 1.1em;
+}
+.list {
+  border-top: solid 1px #777777;
+}
+.list .item {
+  border-bottom: solid 1px #777777;
+}
+.list .item:hover {
+  background-color: #777777;
+  color: #fff;
+}
+
+.global-nav {
+  background-color: #333333;
+  padding: 0.7em 1em;
+}
+
+.global-nav a {
+  color: #fff;
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
+.link-list {
+  width: 30%;
+  min-width: 30em;
+}
+
+.main {
+  padding: 9.4em 1em 8em;
+}
+
+.big-aria-map {
+  padding-bottom: 4.3em;
+}
+
+.pickup {
+  width: 32%;
+}
+
+.pickup .text-container {
+  padding: 0.6em 0;
+}
+
+.pickup .text-container .title {
+  padding-bottom: 1em;
+}
+
+.read-more {
+  display: inherit;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.read-more:hover {
+  text-decoration: none;
+}
+
+.main-aria {
+  width: 63%;
+}
+
+.main-piece {
+  padding-bottom: 5em;
+}
+
+.main-piece .title {
+  font-size: 1.5em;
+  padding-bottom: 0.6em;
+}
+
+.main-piece .posting-date {
+  display: inline-block;
+  padding-right: 1.25em;
+  padding-bottom: 0.6em;
+}
+
+.main-piece .text-container {
+  width: 89%;
+  margin: auto;
+  padding-top: 0.6em;
+}
+
+.main-piece .body {
+  padding-bottom: 1.9em;
+}
+
+.side-bar {
+  width: 32%;
+  box-sizing: border-box;
+  padding: 0.75em;
+}
+
+.auther,
+.ranking {
+  padding-bottom: 3.75em;
+}
+
+.auther .img-container {
+  width: 38%;
+  margin: auto;
+}
+.auther .name {
+  padding: 1.9em;
+  text-align: center;
+}
+.auther .profile {
+  padding: 0 0.25em;
+}
+
+.ranking .item {
+  padding-bottom: 1.9em;
+}
+.ranking .item:last-child {
+  padding-bottom: 0;
+}
+.ranking .item a:hover {
+  opacity: 0.7;
+}
+.ranking .caption,
+.archive .caption {
+  text-align: center;
+}
+.ranking .title {
+  width: 97%;
+}
+
+.archive .list .item {
+  padding: 1.25em;
+}
+
+.archive .list .item a {
+  text-decoration: none;
+}
+
+.about,
+.menu,
+.twitter {
+  width: 29%;
+}
+
+.about .body {
+  padding-bottom: 1.25em;
+  font-size: 0.9em;
+}
+.about .links .item {
+  padding-bottom: 0.3em;
+}
+.about .links .link {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.about .links .link::before {
+  content: "";
+  display: inline-block;
+  background-color: #333333;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  width: 10px;
+  height: 12px;
+}
+
+.about .links .link:hover {
+  text-decoration: underline;
+}
+
+.menu .list .item {
+  padding: 1.1em;
+}
+.menu .list .item:hover {
+  color: #f7f7f7;
+}
+.menu .list .item a {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.twitter {
+  padding-bottom: 3.75em;
+}
+.twitter .implant {
+  background-color: #dedede;
+  width: 100%;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  padding-bottom: 0.8em;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+@media all and (max-width: 600px) {
+  .pickup,
+  .main-aria,
+  .side-bar,
+  .about,
+  .menu,
+  .twitter {
+    width: 100%;
+  }
+
+  .global-nav {
+    overflow-x: scroll;
+  }
+
+  .link-list {
+    padding-right: 1em;
+  }
+
+  .main {
+    padding: 8.75em 1em 7.5em;
+  }
+
+  .pickup .text-container {
+    padding-bottom: 1.9em;
+  }
+
+  .main-piece .posting-date {
+    padding-bottom: 0.7em;
+  }
+
+  .main-piece .text-container {
+    width: 76%;
+  }
+
+  .side-bar {
+    padding: 0;
+  }
+
+  .about {
+    padding-bottom: 3.1em;
+  }
+
+  .menu {
+    padding-bottom: 1.9em;
+  }
+
+  .twitter {
+    padding-bottom: 5.6em;
+  }
+}
