@@ -158,6 +158,9 @@ footer {
   width: 38%;
   margin: auto;
 }
+.auther .img-container img {
+  border-radius: 50%;
+}
 .auther .name {
   padding: 1.9em;
   text-align: center;
